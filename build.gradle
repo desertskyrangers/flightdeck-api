@@ -24,7 +24,7 @@ repositories {
 ext {
 	jjwtVersion = '0.12.6'
 	mapstructVersion='1.6.3'
-	testcontainersVersion= '1.20.4'
+	testcontainersVersion= '1.20.5'
 }
 
 dependencies {
