@@ -42,7 +42,7 @@ dependencies {
 	//implementation 'org.springframework.session:spring-session-core'
 	implementation 'com.twilio.sdk:twilio:10.7.1'
 	implementation 'org.mariadb.jdbc:mariadb-java-client:3.5.2'
-	implementation 'io.pebbletemplates:pebble-spring-boot-starter:3.2.3'
+	implementation 'io.pebbletemplates:pebble-spring-boot-starter:3.2.4'
 	implementation "io.jsonwebtoken:jjwt-api:${jjwtVersion}"
 	implementation "io.jsonwebtoken:jjwt-impl:${jjwtVersion}"
 	implementation "io.jsonwebtoken:jjwt-jackson:${jjwtVersion}"
