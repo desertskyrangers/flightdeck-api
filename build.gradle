@@ -41,7 +41,7 @@ dependencies {
 	//implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
 	//implementation 'org.springframework.session:spring-session-core'
 	implementation 'com.twilio.sdk:twilio:10.9.2'
-	implementation 'org.mariadb.jdbc:mariadb-java-client:3.5.4'
+	implementation 'org.mariadb.jdbc:mariadb-java-client:3.5.5'
 	implementation 'io.pebbletemplates:pebble-spring-boot-starter:3.2.4'
 	implementation "io.jsonwebtoken:jjwt-api:${jjwtVersion}"
 	implementation "io.jsonwebtoken:jjwt-impl:${jjwtVersion}"
