@@ -22,7 +22,7 @@ repositories {
 }
 
 ext {
-	jjwtVersion = '0.12.7'
+	jjwtVersion = '0.13.0'
 	mapstructVersion='1.6.3'
 	testcontainersVersion= '1.21.3'
 }
