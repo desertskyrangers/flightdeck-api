@@ -60,6 +60,7 @@ public class BaseTest {
 		User user = new User();
 		user.username( username );
 		user.email( email );
+		statePersisting.upsert( user );
 		return user;
 	}
 
@@ -81,6 +82,7 @@ public class BaseTest {
 		aircraft.status( Aircraft.Status.DESTROYED );
 		aircraft.owner( owner.id() );
 		aircraft.ownerType( OwnerType.USER );
+		statePersisting.upsert( aircraft );
 		return aircraft;
 	}
 
@@ -101,6 +103,7 @@ public class BaseTest {
 
 		battery.owner( owner.id() );
 		battery.ownerType( OwnerType.USER );
+		statePersisting.upsert( battery );
 		return battery;
 	}
 
@@ -119,6 +122,7 @@ public class BaseTest {
 		flight.duration( 1000 );
 		flight.location( createTestLocation( pilot ) );
 		flight.notes( "Just a test flight" );
+		statePersisting.upsert( flight );
 		return flight;
 	}
 
@@ -132,7 +136,8 @@ public class BaseTest {
 		location.name( "Morning Cloak Park" );
 		location.size( 150 );
 
-		return locationServices.upsert( location );
+		locationServices.upsert( location );
+		return location;
 	}
 
 	protected LocationEntity createTestLocationEntity() {
